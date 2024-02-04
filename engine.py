@@ -7,18 +7,16 @@ import time
 import os
 os.chdir(os.path.dirname(__file__))
 
-CACHE_SIZE = 200000
+# temp var as i copy past it from my old uci mcts project ...
 MINTIME = 0.1
 TIMEDIV = 25.0
 NODES = 800
 C = 3.0
 
 
-import numpy as np
+
 import chess
-import chess.engine
-import chess.pgn
-import chess.svg
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
